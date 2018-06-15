@@ -186,8 +186,8 @@ def _get_message(name, iv, uv, semantic_versioning):
 
     if _has_pip():
         message.append(
-            ("Run {}{} install -U {}{} to update").format(
-                BashStyle.DARKCYAN, pip_exe, name, BashStyle.END
+            ("Run {}{}{} install -U {}{} to update").format(
+                BashStyle.DARKCYAN, 'sudo', pip_exe, name, BashStyle.END
             )
         )
     else:
